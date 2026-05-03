@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="main-container">
+    <section class="sidebar">
+      <div class="sidebar-overlay">
+        <div class="title-wrapper">
+          <img src="./img/logo.png" alt="Logo" class="logo">
+          <h2>Benvenuto</h2>
+        </div>
+        <p>Unisciti alla nostra community e inizia il tuo viaggio oggi stesso.</p>
+      </div>
+    </section>
+
+    <section class="content-area">
+      <div class="header-text">
+        <h1>Crea il tuo account</h1>
+        <p>Compila i moduli sottostanti per registrarti al nostro portale esclusivo.</p>
+      </div>
+
+      <form>
+        <div class="field-group">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Mario" pattern="[A-Za-zÀ-ÿ\s]+" required>
+        </div>
+        <div class="field-group">
+          <label for="cognome">Cognome</label>
+          <input type="text" id="cognome" placeholder="Rossi" pattern="[A-Za-zÀ-ÿ\s]+" required>
+        </div>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="mario.rossi@example.com" required>
+        </div>
+        <div class="field-group">
+          <label for="tel">Telefono</label>
+          <input type="tel" id="tel" placeholder="3330000000" pattern="[0-9]{8,15}" required>
+        </div>
+        <div class="field-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder=" " minlength="12" required>
+        </div>
+        <div class="field-group">
+          <label for="confirm-password">Conferma Password</label>
+          <input type="password" id="confirm-password" placeholder=" " minlength="12" required>
+        </div>
+        <div class="btn-container">
+          <button type="submit" class="btn">Create Account</button>
+        </div>
+      </form>
+      <p class="login-text">Hai già un account? <a href="#">Fai il login</a></p>
+    </section>
+  </main>
+</body>
+
+</html>
